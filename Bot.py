@@ -1,11 +1,9 @@
 import discord
 from Query import Query
 
-file_name = "token"
 # Gets token and prefix from a file
-with open(file_name, 'r') as f:
+with open("token", 'r') as f:
     TOKEN = f.readline().strip()
-f.close()
 
 client = discord.Client()
 
